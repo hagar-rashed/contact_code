@@ -1,0 +1,110 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/***/
+a {
+  display: inline-block;
+}
+.swiper-slide.swiper-slide-active .slider-main_link {
+  top: -18px;
+}
+.slider-main_link {
+  width: 100%;
+  transition: top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: relative;
+  top: 0;
+}
+.slider-main_img-height {
+  width: 100%;
+  border-radius: 15px;
+  padding-top: 114%;
+  position: relative;
+  overflow: hidden;
+}
+.slider-main_img-height {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+.slider-main_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: transform 0.4s;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.swiper-slide.swiper-slide-active .slider-main_img {
+  transform: scale(1.2);
+}
+.swiper-slide.swiper-slide-active .gradient-overlay-grid {
+  height: 50%;
+  opacity: 1;
+}
+.gradient-overlay-grid {
+  height: 50%;
+  opacity: 1;
+  background-image: linear-gradient(rgba(6, 12, 33, 0), #060c21);
+  transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    height 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.swiper-slide.swiper-slide-active .slider-main_text-wrapper {
+  font-size: 2em;
+}
+.swiper-slide.swiper-slide-active .slider-main_text-wrapper {
+  top: 0;
+  opacity: 1;
+}
+.slider-main_text-wrapper {
+  opacity: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: -97px;
+  padding: 6%;
+  transition: top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    opacity 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  display: flex;
+  position: relative;
+  top: 24px;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.green-accent {
+  color: #9bf404;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  order: 1;
+  margin-bottom: 0;
+  font-family: Grotesk compact, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
